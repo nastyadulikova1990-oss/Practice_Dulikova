@@ -1,0 +1,19 @@
+package com.example.myapplication_11;
+
+import android.os.Bundle;
+import android.view.Window;
+
+import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
+
+public class NormalActivity extends AppCompatActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
+        setContentView(R.layout.normal_layout);
+    }
+}
